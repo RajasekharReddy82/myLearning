@@ -17,6 +17,27 @@ Let me know if you'd like answers or code examples for any of these!
 
 https://chatgpt.com/share/676ec9e8-1c94-8012-9b78-25f60d54a3ea
 
+let x;
+let y = 10;
+
+localStorage.setItem('data', x);
+
+if(localStorage.getItem('data')){
+
+y=20;
+}
+y; what is the output of this//
+
+…...….....................….......
+
+let x={
+a:10;
+}
+const value1 = x.a.c //what will be the output 
+const value2 = x.a.c.d // what will be the output 
+
+
+
 *write test cases for this*
 
 import React, { useState, useEffect } from 'react';
