@@ -17,7 +17,7 @@ Let me know if you'd like answers or code examples for any of these!
 
 https://chatgpt.com/share/676ec9e8-1c94-8012-9b78-25f60d54a3ea
 
-write test cases for this
+*write test cases for this*
 
 import React, { useState, useEffect } from 'react';
 
@@ -46,7 +46,7 @@ function DataFetcher() {
 export default DataFetcher;
 
 
-any mistake in this
+*any mistake in this*
 import React, { useState, useMemo } from 'react';
 
 function ExpensiveCalculation({ num }) {
@@ -73,7 +73,7 @@ function App() {
 
 export default App;
 
-any mistake in this code:
+*any mistake in this code:*
 import React from "react";
 function NameList() {
   const names = ["Alice", "Bob", "Charlie"];
