@@ -15,3 +15,75 @@ Here are the questions in a concise "question-only" format:
 Let me know if you'd like answers or code examples for any of these!
 
 https://chatgpt.com/share/676ec9e8-1c94-8012-9b78-25f60d54a3ea
+
+write test cases for this
+
+import React, { useState, useEffect } from 'react';
+
+function DataFetcher() {
+  const [data, setData] = useState([]);
+
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch('https://api.example.com/data');
+      const result = await response.json();
+      setData(result);
+    }
+    fetchData();
+  }, []);
+
+  return (
+    <ul>
+      {data.map(item => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+}
+
+export default DataFetcher;
+
+
+any mistake in this
+import React, { useState, useMemo } from 'react';
+
+function ExpensiveCalculation({ num }) {
+  const calculate = (number) => {
+    console.log('Calculating...');
+    return number * 2;
+  };
+
+  const result = useMemo(() => calculate(num), [num]);
+
+  return <div>Result: {result}</div>;
+}
+
+function App() {
+  const [number, setNumber] = useState(0);
+
+  return (
+    <div>
+      <input type="number" value={number} onChange={(e) => setNumber(e.target.value)} />
+      <ExpensiveCalculation num={number} />
+    </div>
+  );
+}
+
+export default App;
+
+any mistake in this code:
+import React from "react";
+function NameList() {
+  const names = ["Alice", "Bob", "Charlie"];
+  return (
+    <ul>
+      {names.map((name) => (
+        <li key={name}>{name}</li>
+      ))}
+    </ul>
+  );
+}
+export default NameList;
+
+
