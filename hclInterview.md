@@ -10,7 +10,7 @@ Here are the questions in a concise "question-only" format:
 8. How do you find the missing element in the array `[1, 2, 4, 5, 6]`?  
 9. How do you check if the array `[3, 4, 5]` is a subarray of `[1, 2, 3, 4, 5, 6]`?  
 10. What are some practical examples of DOM and BOM usage in JavaScript?
-11. What is Throttling ?
+11. What is Throttling ? write example?.
 
 Let me know if you'd like answers or code examples for any of these!
 
