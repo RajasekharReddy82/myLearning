@@ -1,5 +1,3 @@
-Here are the questions in a concise "question-only" format:
-
 1. How does tree shaking remove unnecessary or unused code during the build process?  
 2. What is the difference between DOM and BOM?  
 3. What is an HTML React parser, and how does it work in React?  
