@@ -13,6 +13,7 @@ Here are the questions in a concise "question-only" format:
 11. What is Throttling ? write example?.
 12. What is XSS? What is CSRF?
 13. saga what is call and fork methods?
+14. do you have any webpack configuration experience?
 
 Let me know if you'd like answers or code examples for any of these!
 
