@@ -12,6 +12,7 @@
 12. What is XSS? What is CSRF?
 13. saga what is call and fork methods?
 14. do you have any webpack configuration experience?
+15. how can stop third party ads in your application?
 
 Let me know if you'd like answers or code examples for any of these!
 
