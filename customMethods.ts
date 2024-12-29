@@ -68,4 +68,18 @@ function printNumber(num) {
   for (var i = 1; i <= 5; i++) {
     setTimeout(printNumber(i), i * 1000); // Currying ensures each `i` is captured correctly
   }
-  
+  // custom flat array
+const nestedArray = [1, [2, [3, [4, 5]]], 6];
+
+function flatArray(array){
+const result = [];
+for(let i =0; i < array.length; i++){
+if(Array.isArray(array[i])){
+result.push(...flatArray(array[i]));
+}else{
+result.push(array[i])
+}
+}
+return result;
+}
+console.log(flatArray(nestedArray));
