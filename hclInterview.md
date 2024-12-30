@@ -13,6 +13,7 @@
 13. saga what is call and fork methods?
 14. do you have any webpack configuration experience?
 15. how can stop third party ads in your application?
+16. How can access store in saga file?
 
 Let me know if you'd like answers or code examples for any of these!
 
