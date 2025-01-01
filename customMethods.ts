@@ -4,11 +4,9 @@ const sort=(right: number[], left: number[]): number[] =>{
     const resultArr: number[] = [];
 
     while (left.length && right.length) {
-        const leftValue = left[0];
-        const rightValue = right[0];
-        
-        if (leftValue !== undefined && rightValue !== undefined) {
-            resultArr.push(leftValue < rightValue ? left.shift()! : right.shift()!);
+
+        if (!!left[0] && !!right[0]) {
+            resultArr.push(left[0] < right[0] ? left.shift()! : right.shift()!);
         }
     }
 
