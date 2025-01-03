@@ -1,3 +1,4 @@
+```javascript
 # mergeSort custom
 
 function sort(right, left){
