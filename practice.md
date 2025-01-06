@@ -46,3 +46,6 @@ console.log(addMemo(1,3));
 console.log(addMemo(1,5));
 console.log(addMemo(1,6));
 console.log(addMemo(1,4));
+
+
+lexicalscope???
