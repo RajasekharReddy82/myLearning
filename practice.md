@@ -19,3 +19,30 @@ return obj;
 },{})
 
 console.log(dataResult, 'result')
+
+
+
+
+const memoizeOne=(fn)=>{
+const map = new Map();
+return (...args)=>{
+const key = args.join('-');
+
+if(map.has(key)){
+console.log('cached')
+return map.get(key);
+}
+const result= fn(...args);
+map.set(key, result)
+return result
+}
+}
+
+const add = (a,b) =>a+b;
+const addMemo = memoizeOne(add);
+console.log(addMemo(1,3));
+console.log(addMemo(1,4));
+console.log(addMemo(1,3));
+console.log(addMemo(1,5));
+console.log(addMemo(1,6));
+console.log(addMemo(1,4));
