@@ -1,3 +1,4 @@
+```javascript
 const data = [
 {key:"Sample 1", data: "data1"},
 {key:"Sample 1", data: "data1"},
