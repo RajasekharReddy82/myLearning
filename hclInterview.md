@@ -105,7 +105,7 @@ function NameList() {
   return (
     <ul>
       {names.map((name) => (
-        <li key={name}>{name}</li>
+        <li>{name}</li>
       ))}
     </ul>
   );
