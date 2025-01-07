@@ -6,7 +6,7 @@
 5. Can a hacker access a JWT token stored in `sessionStorage`? What are the security implications?  
 6. How do you write a test case to check if list items are present in the UI?  
 7. How can you create a polyfill for the `Array.prototype.map` method in JavaScript?  
-8. How do you find the missing element in the array `[1, 2, 4, 5, 6]`?  
+8. How do you find the missing element in the array `[1, 2, 4, 5, 6]`?  formula n*(n+1)/2
 9. How do you check if the array `[3, 4, 5]` is a subarray of `[1, 2, 3, 4, 5, 6]`?  
 10. What are some practical examples of DOM and BOM usage in JavaScript?
 11. What is Throttling ? write example?.
