@@ -1,18 +1,14 @@
 // mergeSort custom
 
-const sort=(right: number[], left: number[]): number[] =>{
-    const resultArr: number[] = [];
-
-    while (left.length && right.length) {
-
-            resultArr.push(left[0] < right[0] ? left.shift()! : right.shift()!);
-        
-    }
-
-    return [...resultArr, ...left, ...right];
+const sort = (left, right)=>{
+const result = [];
+while(left.length && right.length){
+result.push(left[0]<right[0]? left.shift(): right.shift())
+}
+return [...result, ...left, ...right]
 }
 
-const mergeSort = (arr: number[]): number[] => {
+const mergeSort = (arr) => {
     if (arr.length <= 1) return arr;
     const index = Math.floor(arr.length / 2);
     const left = arr.slice(0, index);
