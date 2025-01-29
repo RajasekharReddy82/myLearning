@@ -63,3 +63,24 @@ function findMissingNumber(arr) {
 // Example usage:
 console.log(findMissingNumber([1, 2, 4, 5, 6])); // Output: 3
 console.log(findMissingNumber([3, 7, 1, 2, 8, 4, 5])); // Output: 6
+
+
+function findPairs(arr, target) {
+    const seen = new Set();
+    const pairs = [];
+
+    for (let num of arr) {
+        const complement = target - num;
+        if (seen.has(complement)) {
+            pairs.push([num, complement]);
+        }
+        seen.add(num);
+    }
+
+    return pairs;
+}
+
+// Example usage:
+console.log(findPairs([1, 2, 3, 4, 5, 6], 7)); // Output: [ [ 4, 3 ], [ 5, 2 ], [ 6, 1 ] ]
+console.log(findPairs([1, 3, 5, 7, 9], 10)); // Output: [ [ 7, 3 ], [ 9, 1 ] ]
+
