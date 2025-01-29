@@ -20,6 +20,27 @@ return sort(mergeSort(left), mergeSort(right));
 }
 console.log(mergeSort([7,4,9,0,2,5,7,88,23]))
 
+function firstNonRepeatingChar(str) {
+    const charCount = {};
+
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+
+    for (let char of str) {
+        if (charCount[char] === 1) {
+            return char;
+        }
+    }
+
+    return null;
+}
+
+// Example usage:
+console.log(firstNonRepeatingChar("swiss")); // Output: "w"
+console.log(firstNonRepeatingChar("aabbcc")); // Output: null
+
+
 
 ///fibanoci series
 function fib (number){
