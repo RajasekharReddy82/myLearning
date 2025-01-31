@@ -84,3 +84,6 @@ function findPairs(arr, target) {
 console.log(findPairs([1, 2, 3, 4, 5, 6], 7)); // Output: [ [ 4, 3 ], [ 5, 2 ], [ 6, 1 ] ]
 console.log(findPairs([1, 3, 5, 7, 9], 10)); // Output: [ [ 7, 3 ], [ 9, 1 ] ]
 
+
+https://chatgpt.com/share/679cf372-c7e0-8012-9272-e6e7908cbbe1
+
