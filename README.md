@@ -86,4 +86,12 @@ console.log(findPairs([1, 3, 5, 7, 9], 10)); // Output: [ [ 7, 3 ], [ 9, 1 ] ]
 
 
 https://chatgpt.com/share/679cf372-c7e0-8012-9272-e6e7908cbbe1
+const closures = (a) => {
+  const func = (b) => (b !== undefined ? closures(a + b) : a);
+  func.valueOf = () => a; // Allows implicit conversion
+  return func;
+};
+
+console.log(closures(3)(6)(8)); // Output: 17 (automatically converted)
+console.log(closures(3)(6)(8) + 5); // Output: 22 (behaves like a number)
 
