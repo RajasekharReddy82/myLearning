@@ -95,3 +95,24 @@ const closures = (a) => {
 console.log(closures(3)(6)(8)); // Output: 17 (automatically converted)
 console.log(closures(3)(6)(8) + 5); // Output: 22 (behaves like a number)
 
+
+function throttle(func, limit) {
+    let lastFunc;
+    let lastTime = 0;
+
+    return function (...args) {
+        const now = Date.now();
+        if (now - lastTime >= limit) {
+            func.apply(this, args);
+            lastTime = now;
+        }
+    };
+}
+
+// Example usage:
+const logMessage = throttle((msg) => console.log(msg), 2000);
+
+logMessage("Hello");  // Executes immediately
+setTimeout(() => logMessage("World"), 1000);  // Skipped (within 2 sec)
+setTimeout(() => logMessage("Final Call"), 3000);  // Executes (after 3 sec)
+
