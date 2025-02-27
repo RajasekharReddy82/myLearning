@@ -1,6 +1,9 @@
 ```javascript
+Explain let const and var
+closures
+performance improvements
 
-filter with any key values and also index number create dynamic
+//filter with any key values and also index number create dynamic
 
 const filterObject = (arr, value) =>{
 
