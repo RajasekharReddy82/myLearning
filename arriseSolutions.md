@@ -2,6 +2,7 @@
 Explain let const and var
 closures
 performance improvements
+testing libries and how can mock the data
 
 //filter with any key values and also index number create dynamic
 
