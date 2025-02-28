@@ -1,5 +1,6 @@
 ```javascript
 
+lot this keyword logic questions.
 
 var c = {
 fn:{
