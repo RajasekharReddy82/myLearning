@@ -41,3 +41,14 @@ const data = [
 ];
 
 console.log(sort(data));
+
+
+//react
+
+React pure functions
+optimization techniques
+useEffect.
+useEffect vs useLayouthook
+communication between parent to child and child to parent
+write one pure function component
+write one customHook for sum of two numbers
