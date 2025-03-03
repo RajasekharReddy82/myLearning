@@ -74,3 +74,30 @@ const reverseString = (inputString) => {
 };
 console.log(reverseString('raja')); // Output: 'ajar'
 
+**generateFibonacciSeries**
+const generateFibonacciSeries = (num) => {
+    if (num <= 0) return []; // Handle invalid cases
+    if (num === 1) return [0]; // Handle case where num is 1
+
+    const sequence = [0, 1];
+
+    for (let i = 2; i < num; i++) {
+        sequence.push(sequence[i - 1] + sequence[i - 2]);
+    }
+    return sequence;
+};
+
+// Test Cases
+console.log(generateFibonacciSeries(7)); // Output: [0, 1, 1, 2, 3, 5, 8]
+
+** Find the factorial of given number ?**
+const factorialRecursive = (num) => {
+    if (num < 0) return "Factorial is not defined for negative numbers"; // Handle negative cases
+    if (num === 0 || num === 1) return 1;  // Base case
+    return num * factorialRecursive(num - 1);
+};
+
+console.log(factorialRecursive(5));  // Output: 120
+
+
+
