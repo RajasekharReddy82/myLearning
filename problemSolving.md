@@ -39,3 +39,27 @@ console.log(checkPalindrome('RajaajaR'));  // true
 console.log(isPalindrome('hello'));  // false
 console.log(checkPalindrome('hello'));  // false
 
+**Write a program to remove duplicates from an array ?**
+
+// Method 1: Using Set (Concise and Fast)
+const removeDuplicatesUsingSet = (array) => {
+    return [...new Set(array)];
+};
+
+// Method 2: Using Loop (Efficient for maintaining order)
+const removeDuplicatesUsingLoop = (array) => {
+    const uniqueElements = [];
+
+    for (let element of array) {
+        if (!uniqueElements.includes(element)) {
+            uniqueElements.push(element);
+        }
+    }
+    return uniqueElements;
+};
+
+// Test cases
+console.log(removeDuplicatesUsingSet([7, 7, 6, 6])); // Output: [7, 6]
+console.log(removeDuplicatesUsingLoop([7, 7, 6, 6])); // Output: [7, 6]
+console.log
+
