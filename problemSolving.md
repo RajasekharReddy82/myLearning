@@ -61,5 +61,16 @@ const removeDuplicatesUsingLoop = (array) => {
 // Test cases
 console.log(removeDuplicatesUsingSet([7, 7, 6, 6])); // Output: [7, 6]
 console.log(removeDuplicatesUsingLoop([7, 7, 6, 6])); // Output: [7, 6]
-console.log
+
+**Program to find Reverse of a string without using built-in method ?**
+
+const reverseString = (inputString) => {
+    let reversedString = '';
+
+    for (let character of inputString) {
+        reversedString = character + reversedString; // Prepending each character
+    }
+    return reversedString;
+};
+console.log(reverseString('raja')); // Output: 'ajar'
 
