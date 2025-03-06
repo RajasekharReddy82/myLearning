@@ -38,4 +38,4 @@ promise.resolve().then(()=> console.log('promise'))
 console.log('end');
 
 Javascript
-hosting, closures, event loop, why react, react hooks, class compo and lifecycle methods, redux, generators
+hosting, closures, event loop, why react, react hooks, class compo and lifecycle methods, redux, generators, Observer
