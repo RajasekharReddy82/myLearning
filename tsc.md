@@ -29,3 +29,11 @@ delete a[3];  // Removes the element at index 3 (which is 4)
 console.log(a);  // [1, 2, 3, empty, 5, 6]
 console.log(a.length); // 6 (length remains the same)
 
+
+........................................................
+shallow copy and deepcopy
+useEffect syntax
+context vs redux
+authanication
+
+
