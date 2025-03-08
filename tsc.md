@@ -12,6 +12,19 @@ function findCommonChars(str) {
 var str = "rajasekhar reddy";
 console.log(findCommonChars(str)); // ['r']
 
+generic method:
+function findCommonCharsInAllWords(str) {
+    let words = str.split(' ').map(word => new Set(word)); // Convert words to sets of unique chars
+
+    return [...words.reduce((common, wordSet) => 
+        new Set([...common].filter(char => wordSet.has(char)))
+    )]; // Find intersection of all sets
+}
+
+var str = "rajasekhar reddy ramesh";
+console.log(findCommonCharsInAllWords(str)); // Output: ['r']
+
+
 
 
 //////.......................
