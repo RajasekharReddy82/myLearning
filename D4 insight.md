@@ -47,7 +47,7 @@ const changeName = (obj, name)=>{
     }
     }
 }
-console.log(changeName(obj, 'Rajasekhar'))
+console.log(changeName(obj, 'Rajasekhar')
 
 
 useEffect(()=> {
