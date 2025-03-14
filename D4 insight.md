@@ -35,19 +35,21 @@ let obj = {
     }
 }
 
-const changeName = (obj, name)=>{
-    
-    for(let key in obj){
-    if(typeof obj[key] === 'object') {
-        return changeName(obj[key], name)
-    } else{
-        if(key === 'name') {
-            return {...obj,  obj[key] = name}
-        } else return obj
+const changeName = (obj, name) => {
+    let newObj = { ...obj }; // Create a shallow copy to avoid modifying the original object
+
+    for (let key in newObj) {
+        if (typeof newObj[key] === 'object' && newObj[key] !== null) {
+            newObj[key] = changeName(newObj[key], name); // Recursively update nested objects
+        } else if (key === 'name') {
+            newObj[key] = name; // Change the value if the key is 'name'
+        }
     }
-    }
-}
-console.log(changeName(obj, 'Rajasekhar')
+
+    return newObj;
+};
+
+console.log(changeName(obj, 'Rajasekhar'));
 
 
 useEffect(()=> {
