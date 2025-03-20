@@ -1,4 +1,5 @@
-```javascript (Rejected due cloud questions)
+```javascript
+ (Rejected due cloud questions)
 
 Here’s how you can achieve this in JavaScript using Array methods (reduce, map, and filter):
 
