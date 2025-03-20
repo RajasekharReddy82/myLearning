@@ -32,4 +32,4 @@ console.log(highestSalaryPerDept);
 => React features(hooks)
 => redux vs context which better one 
 
-=> lot of aws and cloud related questions
+=> lot of aws and cloud related questions(ci/cd, hosting and lot)
