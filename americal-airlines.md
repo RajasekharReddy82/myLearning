@@ -1,5 +1,5 @@
 ```javascript
- (Rejected due cloud questions)
+ (Rejected due to cloud questions)
 
 Here’s how you can achieve this in JavaScript using Array methods (reduce, map, and filter):
 
