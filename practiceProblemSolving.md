@@ -1,4 +1,4 @@
-```practice
+```javascript
 const obj = {
   a: {
     b: {
