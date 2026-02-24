@@ -1,4 +1,4 @@
-```javascript 
+```javascript
 
 1.idempotency - response should be the same for that api - if call api multiple times will get same like /profile, /payment link with same kwy to avoid duplicate payment
 Idempotent means making the same API request multiple times results in the same final server state. Methods like GET, PUT, and DELETE are idempotent, while POST is not.
