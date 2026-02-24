@@ -5,4 +5,4 @@ Idempotent means making the same API request multiple times results in the same 
 It’s important for retries, network failures, and preventing duplicate operations like payments.
 
 2. stack and heap
-3.
+3. React Fiber, react 18 vs react 19
